@@ -1,0 +1,103 @@
+# -----------------------------------------------------------------------------
+# Site settings
+# -----------------------------------------------------------------------------
+name: Kripa Upreti
+email: kripaupretis@gmail.com
+description: > # this means to ignore newlines until "url:"
+  Data Analysis and Data Science.
+footer_text: >
+  Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+
+url: # the base hostname & protocol for your site
+baseurl:  # the subpath of your site, e.g. /blog/
+last_updated: # leave blank if you don't want to display last updated
+
+# -----------------------------------------------------------------------------
+# Social integration
+# -----------------------------------------------------------------------------
+twitter_username: kripa_upreti
+linkedin_username: kripa_upreti
+
+# -----------------------------------------------------------------------------
+# Blog
+# -----------------------------------------------------------------------------
+blog_name: DADS
+blog_description: Data Analysis and Data Science
+
+
+# Pagination
+paginate: 4
+permalink: /blog/:year/:title/
+paginate_path: /blog/page:num/
+
+text:
+  pagination:
+    newer: 'Newer'
+    older: 'Older'
+
+# Comments
+# disqus_shortname: al-folio # put your disqus shortname
+
+# Optional features
+show_social_icons:  false
+enable_anchorjs:    false
+enable_katex:       false
+
+# -----------------------------------------------------------------------------
+# Collections
+# -----------------------------------------------------------------------------
+collections:
+  news:
+    defaults:
+      layout: post
+    output: true
+    permalink: /news/:path/
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+news_limit: 5
+
+# -----------------------------------------------------------------------------
+# Jekyll settings
+# -----------------------------------------------------------------------------
+
+# Build settings
+markdown: kramdown
+highlighter: pygments
+
+# Includes
+include: ['_pages']
+
+
+
+# Jekyll-Scholar
+scholar:
+
+  last_name: Upreti
+
+  style: apa
+  locale: en
+
+  sort_by: year
+  order: descending
+
+  replace_strings: true
+  join_strings: true
+
+  query: "@*"
+
+# -----------------------------------------------------------------------------
+# Other settings
+# -----------------------------------------------------------------------------
+jquery_version: "1.12.4"
+katex_version: "0.7.1"
+anchorjs_version: "3.2.2"
+
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME
