@@ -170,7 +170,7 @@ Find the common list of ids, names of employee and branch
 ```sql
 SELECT e.emp_id, e.first_name, b.branch_name
 FROM employee e
-JOIN branch b     LEFT JOIN, RIGHT JOIN
+JOIN branch b     
 ON e.emp_id = b.manager_id;
 ```
 
@@ -178,7 +178,7 @@ Find the  list of ids, names of employee and branch but not missing any of the e
 ```sql
 SELECT e.emp_id, e.first_name, b.branch_name
 FROM employee e
-LEFT JOIN branch b     LEFT JOIN, RIGHT JOIN
+LEFT JOIN branch b     
 ON e.emp_id = b.manager_id;
 ```
 
@@ -186,6 +186,6 @@ Find the  list of ids, names of employee and branch but not missing any of the b
 ```sql
 SELECT e.emp_id, e.first_name, b.branch_name
 FROM employee e
-RIGHT JOIN branch b      LEFT JOIN, RIGHT JOIN
+RIGHT JOIN branch b     
 ON e.emp_id = b.manager_id;
 ```

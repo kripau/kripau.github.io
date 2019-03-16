@@ -115,7 +115,7 @@
 
 <h3 id="here-are-some-of-the-examples-using-the-commands-in-the-chitsheet-as-follows">Here are some of the examples using the commands in the chitsheet as follows:</h3>
 
-<p>Q1) Find all employees from table ‘employee’</p>
+<p>Find all employees from table ‘employee’</p>
 <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span>
 <span class="k">FROM</span> <span class="n">employee</span><span class="p">;</span>
 </code></pre></div></div>
@@ -148,12 +148,12 @@
 <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="k">DISTINCT</span> <span class="n">sex</span>
 <span class="k">FROM</span> <span class="n">employee</span><span class="p">;</span>
 </code></pre></div></div>
-<p>FIND THE NUMBER OF EMPLOYEE having table name emp_id</p>
+<p>Find the number of employee having table name emp_id</p>
 <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="n">emp_id</span><span class="p">)</span>
 <span class="k">FROM</span>  <span class="n">employee</span><span class="p">;</span>
 </code></pre></div></div>
 
-<p>FIND THE NUMBER OF EMPLOYEE having female sex and birth_day greater than 1971-01-01</p>
+<p>Find the number of employee having female sex and birth_day greater than 1971-01-01</p>
 <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="n">emp_id</span><span class="p">)</span>
 <span class="k">FROM</span>  <span class="n">employee</span>
 <span class="k">WHERE</span>  <span class="n">sex</span> <span class="o">=</span> <span class="s1">'F'</span> <span class="k">AND</span> <span class="n">birth_day</span> <span class="o">&gt;</span><span class="s1">'1971-01-01'</span><span class="p">;</span>
@@ -216,21 +216,21 @@
 <p>Find the common list of ids, names of employee and branch</p>
 <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="n">e</span><span class="p">.</span><span class="n">emp_id</span><span class="p">,</span> <span class="n">e</span><span class="p">.</span><span class="n">first_name</span><span class="p">,</span> <span class="n">b</span><span class="p">.</span><span class="n">branch_name</span>
 <span class="k">FROM</span> <span class="n">employee</span> <span class="n">e</span>
-<span class="k">JOIN</span> <span class="n">branch</span> <span class="n">b</span>     <span class="k">LEFT</span> <span class="k">JOIN</span><span class="p">,</span> <span class="k">RIGHT</span> <span class="k">JOIN</span>
+<span class="k">JOIN</span> <span class="n">branch</span> <span class="n">b</span>     
 <span class="k">ON</span> <span class="n">e</span><span class="p">.</span><span class="n">emp_id</span> <span class="o">=</span> <span class="n">b</span><span class="p">.</span><span class="n">manager_id</span><span class="p">;</span>
 </code></pre></div></div>
 
 <p>Find the  list of ids, names of employee and branch but not missing any of the employee folder</p>
 <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="n">e</span><span class="p">.</span><span class="n">emp_id</span><span class="p">,</span> <span class="n">e</span><span class="p">.</span><span class="n">first_name</span><span class="p">,</span> <span class="n">b</span><span class="p">.</span><span class="n">branch_name</span>
 <span class="k">FROM</span> <span class="n">employee</span> <span class="n">e</span>
-<span class="k">LEFT</span> <span class="k">JOIN</span> <span class="n">branch</span> <span class="n">b</span>     <span class="k">LEFT</span> <span class="k">JOIN</span><span class="p">,</span> <span class="k">RIGHT</span> <span class="k">JOIN</span>
+<span class="k">LEFT</span> <span class="k">JOIN</span> <span class="n">branch</span> <span class="n">b</span>     
 <span class="k">ON</span> <span class="n">e</span><span class="p">.</span><span class="n">emp_id</span> <span class="o">=</span> <span class="n">b</span><span class="p">.</span><span class="n">manager_id</span><span class="p">;</span>
 </code></pre></div></div>
 
 <p>Find the  list of ids, names of employee and branch but not missing any of the branch name</p>
 <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="n">e</span><span class="p">.</span><span class="n">emp_id</span><span class="p">,</span> <span class="n">e</span><span class="p">.</span><span class="n">first_name</span><span class="p">,</span> <span class="n">b</span><span class="p">.</span><span class="n">branch_name</span>
 <span class="k">FROM</span> <span class="n">employee</span> <span class="n">e</span>
-<span class="k">RIGHT</span> <span class="k">JOIN</span> <span class="n">branch</span> <span class="n">b</span>      <span class="k">LEFT</span> <span class="k">JOIN</span><span class="p">,</span> <span class="k">RIGHT</span> <span class="k">JOIN</span>
+<span class="k">RIGHT</span> <span class="k">JOIN</span> <span class="n">branch</span> <span class="n">b</span>     
 <span class="k">ON</span> <span class="n">e</span><span class="p">.</span><span class="n">emp_id</span> <span class="o">=</span> <span class="n">b</span><span class="p">.</span><span class="n">manager_id</span><span class="p">;</span>
 </code></pre></div></div>
 
