@@ -54,7 +54,7 @@ SELECT *
 FROM employee;
 ```
 
-Find all the employee whose salary is greater than 85000?
+Find all the employee whose salary is greater than 85000
 ```sql
 SELECT *
 FROM employee

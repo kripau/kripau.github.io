@@ -66,21 +66,21 @@ A measure of variability is a summary measure that represents how data is spread
 ### Variance:
 Variance measures the dispersion of a set of data points around their mean. Variance is squaring the difference between an individual data point and the mean and averaging the squares. Variance measures the average degree to which each data deviates from the mean. The higher the variance, the greater the entire data range. It’s unit is squared of the unit of dataset and it’s mean.
 
-<img src="/assets/img/des_stat/3_Variance.png" alt="mean" style="width:600px; margin-left: automargin-right: auto;"/>
+<img src="/assets/img/des_stat/3_variance.png" alt="variance formula" style="width:600px; margin-left: automargin-right: auto;"/>
 
 Example: Salary of 5 employee includes 7K, 6.6K, 7.5K, 8.9K, 7.5K. Mean salary is 7.5K. Variance of the dataset is 0.755K.
 
 ### Standard deviation:
 Standard deviation is simply the square root of the variance. The squared root of the variance indicates the standard deviation which returned to the original unit of measurement of the dataset making standard deviation much more meaningful than variance.
 
-<img src="/assets/img/des_stat/4_Standard_deviation.png" alt="mean" style="width:600px; margin-left: automargin-right: auto;"/>
+<img src="/assets/img/des_stat/4_standard_deviation.png" alt="standard deviation formula" style="width:600px; margin-left: automargin-right: auto;"/>
 
 Example: Salary of 5 employee includes 7K, 6.6K, 7.5K, 8.9K, 7.5K. Mean salary is 7.5K. Variance of the dataset is 0.8689K 
 
 ### Coefficient of variation :
 Coefficient of variation is the relative standard deviation with respect to its mean value.
 
-<img src="/assets/img/des_stat/5_cv.png" alt="mean" style="width:600px; margin-left: automargin-right: auto;"/>
+<img src="/assets/img/des_stat/5_cv.png" alt="formula of cofficient of variation" style="width:600px; margin-left: automargin-right: auto;"/>
 
 For a single dataset, standard deviation is the most common measure of variability. However, when two or more dataset is compared, comparing standard deviation is meaningless while comparing coefficient of variation of two or more dataset is very meaningful.
 
@@ -92,7 +92,7 @@ Covariance and correlation are two measure of relationship between variables.
 ### Covariance :
 Covariance is a measure indicating the degree to which two random variables changes. It can be found using the following formula. It’s value ranges from -∞ to +∞. 
 
-<img src="/assets/img/des_stat/6_Covariance.png" alt="mean" style="width:600px; margin-left: automargin-right: auto;"/>
+<img src="/assets/img/des_stat/6_covariance.png" alt="formula of covariance" style="width:600px; margin-left: automargin-right: auto;"/>
 
 The two variables are correlated and the main statistics to measure correlation is covariance. Covariance gives sense of direction. If covariance is greater than zero, the two variables move together. If it is lesser than zero, the two variables move in opposite directions. If it is equal to zero, the two variables are independent. Its unit is the product of units of two variables.
 
