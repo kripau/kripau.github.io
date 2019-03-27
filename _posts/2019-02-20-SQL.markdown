@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SQL
-date: 2019-03-02
+date: 2019-02-20
 Tags: SQL
 ---
 <img src="/assets/img/sql/sql_syntax.png" alt="mean" style="width:600px; margin-left: auto;
